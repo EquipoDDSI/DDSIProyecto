@@ -7,7 +7,7 @@
 //  GET     /:codeTesis                                         Select one tesis
 //  DELETE  /:codeTesis                                         Delete a tesis
 //  PUT     /:codeTesis     nombre, descripcion                 Update a tesis
-//  POST    /               codeTesis,nombre,descripcion        Upload a tesis
+//  POST    /               nombre,descripcion                  Upload a tesis
 
 //   [NOTE] : To use body params (raw json) you need to include 
 //             "Content type : application/json" in the header.
@@ -41,11 +41,11 @@ router.get('/tesis/:id', (req,res)=>{
 
 // Create a tesis
 router.post('/tesis/', (req, res) => {
-    const {codeTesis, nombre, descripcion} = req.body;
+    const {nombre, descripcion} = req.body;
     const query = `
-        CALL tesisAddOrEdit (?, ?, ?);
+        CALL tesisAddOrEdit (0, ?, ?);
     `;
-    mysqlConnection.query(query, [codeTesis, nombre, descripcion], (err, rows, fields) => {
+    mysqlConnection.query(query, [nombre, descripcion], (err, rows, fields) => {
         if(!err)
             res.json({Status: 'Tesis guardada'});
         else 
