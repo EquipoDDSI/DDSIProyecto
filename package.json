@@ -1,0 +1,27 @@
+{
+  "name": "DDSIProyecto",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  },
+  "scripts": {
+    "dev": "nodemon src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EquipoDDSI/DDSIProyecto.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EquipoDDSI/DDSIProyecto/issues"
+  },
+  "homepage": "https://github.com/EquipoDDSI/DDSIProyecto#readme"
+}
