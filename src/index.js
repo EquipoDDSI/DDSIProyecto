@@ -13,7 +13,7 @@ class Server {
     }
 
     config() {
-        this.app.set('port', process.env.PORT || 3000);
+        this.app.set('port', process.env.PORT || 3070);
         this.app.use(express.json());
     }
 
