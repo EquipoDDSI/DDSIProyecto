@@ -7,7 +7,7 @@ BEGIN
     IF  _codeAlumno = 0 THEN
         INSERT INTO alumno (nombreAlumno, apellidoAlumno)
         VALUES (_nombreAlumno, _apellidoAlumno);
-        SET _ =codeAlumno LAST_INSERT_ID();
+        SET _ = codeAlumno LAST_INSERT_ID();
     ELSE
         UPDATE alumno
         SET 

@@ -39,12 +39,15 @@ router.get('/alumno/:id', (req,res)=>{
     })
 })
 
-// Create a alumno
+// Create an alumno
 router.post('/alumno/', (req, res) => {
-    const query = ('INSERT INTO alumno set ?', [req.body]);
+    const {nombreAlumno, apellidoAlumno} = req.body;
+    const query = `
+        CALL alumnoAddOrEdit (0, ?, ?);
+    `;
     mysqlConnection.query(query, [nombreAlumno, apellidoAlumno], (err, rows, fields) => {
         if(!err)
-            res.json({Status: 'Alumno guardada' + query});
+            res.json({Status: 'Alumno guardada'});
         else 
             console.log(err);
     });
