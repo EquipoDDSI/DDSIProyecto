@@ -2,7 +2,7 @@ CREATE DATABASE Departamento;
 USE Departamento;
 
 CREATE TABLE Cargo(
-		codeCargo INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+		codeCargo INT( ) NOT NULL AUTO_INCREMENT PRIMARY KEY,
 		nombreCargo VARCHAR(20) NOT NULL
 );
 CREATE TABLE HorarioTutorias (
@@ -15,38 +15,38 @@ CREATE TABLE HorarioTutorias (
 );
 
 CREATE TABLE Profesor(
-		codeProfesor INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, //autoincrement
+		codeProfesor INT( ) NOT NULL AUTO_INCREMENT PRIMARY KEY, //autoincrement
 		nombreProf VARCHAR(20) NOT NULL,
 		apellidoProf VARCHAR(40) NOT NULL
 );
 CREATE TABLE Alumno(
-		codeAlumno INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+		codeAlumno INT() NOT NULL AUTO_INCREMENT PRIMARY KEY,
 		nombreAlumno VARCHAR(20) NOT NULL,
 		apellidoAlumno VARCHAR(40) NOT NULL
 );
 
 
 CREATE TABLE TFG(
-		codeTFG INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+		codeTFG INT( ) NOT NULL AUTO_INCREMENT PRIMARY KEY,
 		nombre VARCHAR(20) NOT NULL,
 		descripcion VARCHAR(300) NOT NULL
 );
 
 CREATE TABLE TFM(
-		codeTFM INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+		codeTFM INT( ) NOT NULL AUTO_INCREMENT PRIMARY KEY,
 		nombre VARCHAR(20) NOT NULL,
 		descripcion VARCHAR(300) NOT NULL
 );
 
 CREATE TABLE Tesis(
-		codeTesis INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+		codeTesis INT( ) NOT NULL AUTO_INCREMENT PRIMARY KEY,
 		nombre VARCHAR(20) NOT NULL,
 		descripcion VARCHAR(300) NOT NULL
 );
 
 
 CREATE TABLE Profesor_Tiene_Cargo(
-		codeCargo INT(11) REFERENCES Cargo(codeCargo),
+		codeCargo INT( ) REFERENCES Cargo(codeCargo),
         codeProf CHAR(9) REFERENCES Profesor(codeProf),
 		fecha_ini DATE NOT NULL,
 		fecha_fin DATE, 
@@ -69,35 +69,35 @@ CHECK(`hora_fin` > `hora_ini`),
 
 CREATE TABLE Profesor_Tutoriza_TFG (
 		codeProf INT(9) REFERENCES Profesor(codeProf),
-		codeTFG INT(11) NOT NULL REFERENCES TFG(codeTFG),
+		codeTFG INT( ) NOT NULL REFERENCES TFG(codeTFG),
 		PRIMARY KEY (codeProf, codeTFG)
 );
 
 
 CREATE TABLE Profesor_Tutoriza_TFM (
 		codeProf INT(9) REFERENCES Profesor(codeProf),
-		codeTFM INT(11) NOT NULL REFERENCES TFM(codeTFM),
+		codeTFM INT( ) NOT NULL REFERENCES TFM(codeTFM),
 		PRIMARY KEY (codeProf, codeTFM)
 );
 
 CREATE TABLE Profesor_Tutoriza_Tesis (
 		codeProf INT(9) REFERENCES Profesor(codeProf),
-		codeTesis INT(11) NOT NULL REFERENCES Tesis(codeTesis),
+		codeTesis INT( ) NOT NULL REFERENCES Tesis(codeTesis),
 		PRIMARY KEY (codeProf, codeTesis)
 );
 
 
 CREATE TABLE Alumno_AsignadoA_TFG (
-		codeTFG INT(11) NOT NULL PRIMARY KEY REFERENCES TFG(codeTFG),
+		codeTFG INT( ) NOT NULL PRIMARY KEY REFERENCES TFG(codeTFG),
 		codeAlumno INT(9) REFERENCES Alumno(codeAlumno)
 );
 
 CREATE TABLE Alumno_AsignadoA_TFM (
-		codeTFM INT(11) NOT NULL PRIMARY KEY REFERENCES TFM(codeTFM),
+		codeTFM INT( ) NOT NULL PRIMARY KEY REFERENCES TFM(codeTFM),
 		codeAlumno INT(9) REFERENCES Alumno(codeAlumno)
 );
 
 CREATE TABLE Alumno_AsignadoA_Tesis (
-		codeTesis INT(11) NOT NULL PRIMARY KEY REFERENCES Tesis(codeTesis),
+		codeTesis INT( ) NOT NULL PRIMARY KEY REFERENCES Tesis(codeTesis),
 		codeAlumno CHAR(9) REFERENCES Alumno(codeAlumno)
 );
