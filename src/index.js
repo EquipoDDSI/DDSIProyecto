@@ -20,6 +20,7 @@ class Server {
     routes() {
         this.app.use(require('./routes/tesis'));
         this.app.use(require('./routes/tfg'));
+        this.app.use(require('./routes/tfm'));
     }
 
     start()  {
