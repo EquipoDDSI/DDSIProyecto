@@ -21,6 +21,7 @@ class Server {
         this.app.use(require('./routes/tesis'));
         this.app.use(require('./routes/tfg'));
         this.app.use(require('./routes/tfm'));
+        this.app.use(require('./routes/alumno'));
     }
 
     start()  {

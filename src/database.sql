@@ -15,7 +15,7 @@ CREATE TABLE HorarioTutorias (
 );
 
 CREATE TABLE Profesor(
-		codeProfesor INT( ) NOT NULL AUTO_INCREMENT PRIMARY KEY, //autoincrement
+		codeProfesor INT( ) NOT NULL AUTO_INCREMENT PRIMARY KEY,
 		nombreProf VARCHAR(20) NOT NULL,
 		apellidoProf VARCHAR(40) NOT NULL
 );
