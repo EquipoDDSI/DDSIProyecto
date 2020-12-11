@@ -70,20 +70,20 @@ CHECK(`hora_fin` > `hora_ini`),
 CREATE TABLE Profesor_Tutoriza_TFG (
 		codeProf INT(9) REFERENCES Profesor(codeProf),
 		codeTFG INT( ) NOT NULL REFERENCES TFG(codeTFG),
-		PRIMARY KEY (codeProf, codeTFG)
+		PRIMARY KEY (codeTFG)
 );
 
 
 CREATE TABLE Profesor_Tutoriza_TFM (
 		codeProf INT(9) REFERENCES Profesor(codeProf),
 		codeTFM INT( ) NOT NULL REFERENCES TFM(codeTFM),
-		PRIMARY KEY (codeProf, codeTFM)
+		PRIMARY KEY (codeTFM)
 );
 
 CREATE TABLE Profesor_Tutoriza_Tesis (
 		codeProf INT(9) REFERENCES Profesor(codeProf),
 		codeTesis INT( ) NOT NULL REFERENCES Tesis(codeTesis),
-		PRIMARY KEY (codeProf, codeTesis)
+		PRIMARY KEY (codeTesis)
 );
 
 
