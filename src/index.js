@@ -22,6 +22,8 @@ class Server {
         this.app.use(require('./routes/tfg'));
         this.app.use(require('./routes/tfm'));
         this.app.use(require('./routes/alumno'));
+        this.app.use(require('./routes/profesor'));
+        this.app.use(require('./routes/cargo'));
     }
 
     start()  {
