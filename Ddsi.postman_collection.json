@@ -664,7 +664,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"nombreAlumno\": \"Actualizado\",\r\n    \"apellidoAlumno\": \"Desde Postman\"\r\n}",
+							"raw": "{\r\n    \"nombreProf\": \"Actualizado\",\r\n    \"apellidoProf\": \"Desde Postman\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
