@@ -6,11 +6,11 @@ BEGIN
     IF  _codeCargo = 0 THEN
         INSERT INTO cargo (nombreCargo)
         VALUES (_nombreCargo);
-        SET _ = codeCargo LAST_INSERT_ID();
+        SET _codeCargo = LAST_INSERT_ID();
     ELSE
         UPDATE cargo
         SET 
-            nombreCargo      = _nombreCargo,
+            nombreCargo      = _nombreCargo
             WHERE codeCargo = _codeCargo;
     END IF;
 	SELECT _codeCargo AS codeCargo;
