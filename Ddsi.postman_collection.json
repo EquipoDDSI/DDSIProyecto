@@ -1,0 +1,742 @@
+{
+	"info": {
+		"_postman_id": "fe1bd7cc-963b-4e7b-97ec-d8254852d5c7",
+		"name": "Ddsi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Tfg",
+			"item": [
+				{
+					"name": "Obtener una",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3070/tfg/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3070",
+							"path": [
+								"tfg",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Listar",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3070/tfg",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3070",
+							"path": [
+								"tfg"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Tfg desde postman\",\r\n    \"descripcion\": \"Actualizacion del tfg\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3070/tfg/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3070",
+							"path": [
+								"tfg",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Tfg desde postman\",\r\n    \"descripcion\": \"Descripcion del tfg\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3070/tfg",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3070",
+							"path": [
+								"tfg"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3070/tfg/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3070",
+							"path": [
+								"tfg",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Tfm",
+			"item": [
+				{
+					"name": "Obtener una",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3070/tfm/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3070",
+							"path": [
+								"tfm",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Listar",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3070/tfm",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3070",
+							"path": [
+								"tfm"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Tfm desde postman\",\r\n    \"descripcion\": \"Actualizada del tfm\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3070/tfm/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3070",
+							"path": [
+								"tfm",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Tfm desde postman\",\r\n    \"descripcion\": \"Descripcion del tfm\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3070/tfm",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3070",
+							"path": [
+								"tfm"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3070/tfm/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3070",
+							"path": [
+								"tfm",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Tesis",
+			"item": [
+				{
+					"name": "Obtener una",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3070/tesis/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3070",
+							"path": [
+								"tesis",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Listar",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3070/tesis",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3070",
+							"path": [
+								"tesis"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Tesis desde postman\",\r\n    \"descripcion\": \"Actualizacion de la tesis\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3070/tesis/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3070",
+							"path": [
+								"tesis",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Tesis desde postman\",\r\n    \"descripcion\": \"Descripcion del tesis\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3070/tesis",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3070",
+							"path": [
+								"tesis"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3070/tesis/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3070",
+							"path": [
+								"tesis",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Alumno",
+			"item": [
+				{
+					"name": "Obtener una",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3070/alumno/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3070",
+							"path": [
+								"alumno",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Listar",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3070/alumno",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3070",
+							"path": [
+								"alumno"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombreAlumno\": \"Actualizado\",\r\n    \"apellidoAlumno\": \"Desde Postman\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3070/alumno/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3070",
+							"path": [
+								"alumno",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombreAlumno\": \"Alumno\",\r\n    \"apellidoAlumno\": \"Nuevo\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3070/alumno",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3070",
+							"path": [
+								"alumno"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3070/alumno/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3070",
+							"path": [
+								"alumno",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Cargos",
+			"item": [
+				{
+					"name": "Obtener una",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3070/cargo/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3070",
+							"path": [
+								"cargo",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Listar",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3070/cargo",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3070",
+							"path": [
+								"cargo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombreCargo\": \"Actualizado\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3070/cargo/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3070",
+							"path": [
+								"cargo",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombreCargo\": \"Nuevo\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3070/cargo",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3070",
+							"path": [
+								"cargo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3070/cargo/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3070",
+							"path": [
+								"cargo",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Profesor",
+			"item": [
+				{
+					"name": "Obtener una",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3070/profesor/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3070",
+							"path": [
+								"profesor",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Listar",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3070/profesor",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3070",
+							"path": [
+								"profesor"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombreAlumno\": \"Actualizado\",\r\n    \"apellidoAlumno\": \"Desde Postman\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3070/profesor/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3070",
+							"path": [
+								"profesor",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombreProf\": \"Profesor\",\r\n    \"apellidoProf\": \"Nuevo\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3070/profesor",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3070",
+							"path": [
+								"profesor"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3070/profesor/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3070",
+							"path": [
+								"profesor",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}

@@ -41,11 +41,11 @@ router.get('/profesor/:id', (req,res)=>{
 
 // Create an profesor
 router.post('/profesor/', (req, res) => {
-    const {nombreprofesor, apellidoprofesor} = req.body;
+    const {nombreProf, apellidoProf} = req.body;
     const query = `
         CALL profesorAddOrEdit (0, ?, ?);
     `;
-    mysqlConnection.query(query, [nombreprofesor, apellidoprofesor], (err, rows, fields) => {
+    mysqlConnection.query(query, [nombreProf, apellidoProf], (err, rows, fields) => {
         if(!err)
             res.json({Status: 'profesor guardado'});
         else 
@@ -55,13 +55,13 @@ router.post('/profesor/', (req, res) => {
 
 // Update a profesor
 router.put('/profesor/:codeProfesor', (req, res) => {
-    const {nombreprofesor, apellidoprofesor} = req.body;
-    const {codeprofesor} = req.params;
+    const {nombreProf, apellidoProf} = req.body;
+    const {codeProfesor} = req.params;
 
     const query = `
         CALL profesorAddOrEdit (?, ?, ?);
     `;
-    mysqlConnection.query(query, [codeprofesor, nombreprofesor, apellidoprofesor], (err, rows, fields) => {
+    mysqlConnection.query(query, [codeProfesor, nombreProf, apellidoProf], (err, rows, fields) => {
         if(!err)
             res.json({Status: 'profesor actualizada'});
         else 
@@ -71,9 +71,9 @@ router.put('/profesor/:codeProfesor', (req, res) => {
 
 // Delete a profesor
 router.delete('/profesor/:codeProfesor', (req,res)=>{
-    const {codeprofesor} = req.params;
+    const {codeProfesor} = req.params;
 
-    mysqlConnection.query('DELETE FROM profesor WHERE codeProfesor=?', [codeprofesor], (err, rows, fields) => {
+    mysqlConnection.query('DELETE FROM profesor WHERE codeProfesor=?', [codeProfesor], (err, rows, fields) => {
         if(!err)
             res.json({status: 'profesor eliminado'});
         else
