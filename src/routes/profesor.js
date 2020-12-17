@@ -69,6 +69,7 @@ router.put('/profesor/:codeProfesor', (req, res) => {
     });
 })
 
+
 // Delete a profesor
 router.delete('/profesor/:codeProfesor', (req,res)=>{
     const {codeProfesor} = req.params;
