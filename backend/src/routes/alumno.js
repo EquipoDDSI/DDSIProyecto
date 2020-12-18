@@ -56,7 +56,7 @@ router.post('/alumno/', (req, res) => {
 // Update a alumno
 router.put('/alumno/:codeAlumno', (req, res) => {
     const {nombreAlumno, apellidoAlumno} = req.body;
-    const {codeAlumno} = req.params;
+    const codeAlumno = req.params.codeAlumnoy;
 
     const query = `
         CALL alumnoAddOrEdit (?, ?, ?);

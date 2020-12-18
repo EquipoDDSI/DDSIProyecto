@@ -3,11 +3,11 @@
 
 // Method   Route           Body Params (raw json)              Action
 // ______________________________________________________________________________      
-//  GET     /                                                  List all profesor
-//  GET     /:codeprofesor                                       Select one profesor
-//  DELETE  /:codeprofesor                                       Delete a profesor
-//  PUT     /:codeprofesor     nombreprofesor, apellidos                  Update a profesor
-//  POST    /                nombreprofesor,apellidos                   Upload a profesor
+//  GET     /                                                List all profesor
+//  GET     /:codeprofesor                                   Select one profesor
+//  DELETE  /:codeprofesor                                   Delete a profesor
+//  PUT     /:codeprofesor     nombreprofesor, apellidos     Update a profesor
+//  POST    /                nombreprofesor,apellidos        Upload a profesor
 
 //   [NOTE] : To use body params (raw json) you need to include 
 //             "Content type : application/json" in the header.
