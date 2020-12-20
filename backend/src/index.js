@@ -3,6 +3,8 @@
 //**************************************************************************
 
 const express = require('express');
+const bodyParser = require('body-parser');
+const cors = require('cors')
 
 class Server {
 
@@ -15,6 +17,8 @@ class Server {
     config() {
         this.app.set('port', process.env.PORT || 3070);
         this.app.use(express.json());
+        this.app.use(bodyParser.urlencoded({extended: true}));
+        this.app.use(cors());
     }
 
     routes() {
