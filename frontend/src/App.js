@@ -1,5 +1,5 @@
 import './App.css';
-import React, {useState} from 'react';
+import React from 'react';
 import CrudProfesor from './components/CrudProfesor/CrudProfesor'
 
 const App = () => {

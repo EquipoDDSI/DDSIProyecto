@@ -83,6 +83,7 @@ export const CrudProfesor = () => {
                     Listar profesores
                 </button>
                 <table>
+                    <tbody>
                     <tr>
                         <th>Nombre</th>
                         <th>Apellidos</th>
@@ -96,15 +97,14 @@ export const CrudProfesor = () => {
                                 return (
                                 <tr>
                                     <th>
-                                    <input type="text" placeholder={profesor.nombreProf} name="apellidosProf" onChange={(e) => {
-                                        nombre = e.target.value;
-                                    }}/>
-                                        
+                                        <input type="text" placeholder={profesor.nombreProf} name="apellidosProf" onChange={(e) => {
+                                            nombre = e.target.value;
+                                        }}/>  
                                     </th> 
                                     <th>
-                                    <input type="text" placeholder={profesor.apellidoProf} name="apellidoProf" onChange={(e) => {
-                                        apellidos = e.target.value;
-                                    }}/>
+                                        <input type="text" placeholder={profesor.apellidoProf} name="apellidoProf" onChange={(e) => {
+                                            apellidos = e.target.value;
+                                        }}/>
                                     </th> 
                                     <th>
                                         <button id="editar-boton" onClick={() => {
@@ -124,6 +124,7 @@ export const CrudProfesor = () => {
                             }
                             )
                     }
+                    </tbody>
                 </table>
             </div>
         </>
