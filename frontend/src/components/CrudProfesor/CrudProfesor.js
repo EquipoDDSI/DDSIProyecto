@@ -109,7 +109,7 @@ export const CrudProfesor = () => {
                                     <th>
                                         <button id="editar-boton" onClick={() => {
                                             editaProfesor(profesor.codeProfesor,
-                                                nombre === undefined? profesor.nombreProf : nombre, 
+                                                nombre, 
                                                 apellidos === undefined? profesor.apellidoProf : apellidos)
                                         }}>
                                         Editar
