@@ -10,7 +10,6 @@ CREATE TABLE HorarioTutorias (
 		hora_ini TIME NOT NULL,
 		hora_fin TIME NOT NULL,
 		CHECK (`dia` IN ('Lunes','Martes', 'Miércoles', 'Jueves', 'Viernes')),
-		CHECK(`hora_fin` > `hora_ini`),
 		PRIMARY KEY (`dia`,`hora_ini`,`hora_fin`)
 );
 
